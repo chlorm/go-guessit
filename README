@@ -1,0 +1,26 @@
+go-guessit
+==========
+
+A wrapper around the guessit cli.
+
+### Usage:
+
+```go
+import (
+  "errors"
+  "fmt"
+  "os"
+
+  "github.com/chlorm/guessit"
+)
+
+func main() {
+  var properties *Properties
+  p, err := Guessit("Title.S01E01.EpisodeTitle.1080p.WEB-DL.H.264-GROUP.mkv")
+  if err != nil {
+    errors.New("error message")
+    os.Exit(1)
+  }
+  fmt.Println(p.Type.Value)
+}
+```
