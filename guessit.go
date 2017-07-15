@@ -21,6 +21,8 @@ package guessit
 import (
   "encoding/json"
   "os/exec"
+
+  "github.com/chlorm/go-sys-utils/findbinpath"
 )
 
 // http://guessit.readthedocs.io/en/latest/properties.html
@@ -282,6 +284,11 @@ type Properties struct {
 // Call guessit CLI
 func Guessit(filename string) (*Properties, error) {
   var err error
+
+  _, err = findbinpath.FindBinPath("guessit")
+  if err != nil {
+    return nil, err
+  }
 
   guessitOut, err := exec.Command("guessit", "-j", "-a", filename).Output()
   if err != nil {
