@@ -35,250 +35,250 @@ type Properties struct {
     End int `json:"end"`
   } `json:"type"`
   Title struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"title"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"title,omitempty"`
   AlternativeTitle struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"alternative_title"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"alternative_title,omitempty"`
   Container struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"container"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"container,omitempty"`
   MimeType struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"mimetype"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"mimetype,omitempty"`
   Date struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"date"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"date,omitempty"`
   Year struct {
-    Value int `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"year"`
+    Value int `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"year,omitempty"`
   ReleaseGroup struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"release_group"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"release_group,omitempty"`
   Website struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"website"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"website,omitempty"`
   StreamingService struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"streaming_service"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"streaming_service,omitempty"`
   // Episode properties
   Season struct {
-    Value int `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"season"`
+    Value int `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"season,omitempty"`
   Episode struct {
-    Value int `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"episode"`
+    Value int `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"episode,omitempty"`
   EpisodeCount struct {
-    Value int `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"episode_count"`
+    Value int `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"episode_count,omitempty"`
   SeasonCount struct {
-    Value int `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"season_count"`
+    Value int `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"season_count,omitempty"`
   EpisodeDetails struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"episode_details"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"episode_details,omitempty"`
   EpisodeFormat struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"episode_format"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"episode_format,omitempty"`
   Part struct {
-    Value int `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"part"`
+    Value int `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"part,omitempty"`
   Version struct {
-    Value int `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"version"`
+    Value int `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"version,omitempty"`
   //Video properties
   Format struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"format"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"format,omitempty"`
   ScreenSize struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"screen_size"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"screen_size,omitempty"`
   VideoCodec struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"video_codec"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"video_codec,omitempty"`
   VideoProfile struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"video_profile"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"video_profile,omitempty"`
   VideoApi struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"video_api"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"video_api,omitempty"`
   // Audio properties
   AudioChannels struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"audio_channels"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"audio_channels,omitempty"`
   AudioCodec struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"audio_codec"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"audio_codec,omitempty"`
   AudioProfile struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"audio_profile"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"audio_profile,omitempty"`
   // Localization properties
   Country struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"country"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"country,omitempty"`
   Language struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"language"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"language,omitempty"`
   SubtitleLanguage struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"subtitle_language"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"subtitle_language,omitempty"`
   // Other properties
   Bonus struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"bonus"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"bonus,omitempty"`
   BonusTitle struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"bonus_title"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"bonus_title,omitempty"`
   Cd struct {
-    Value int `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"cd"`
+    Value int `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"cd,omitempty"`
   CdCount struct {
-    Value int `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"cd_count"`
+    Value int `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"cd_count,omitempty"`
   Crc32 struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"crc32"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"crc32,omitempty"`
   Uuid struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"uuid"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"uuid,omitempty"`
   Size struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"size"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"size,omitempty"`
   Edition struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"edition"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"edition,omitempty"`
   Film struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"film"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"film,omitempty"`
   FilmTitle struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"film_title"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"film_title,omitempty"`
   FilmSeries struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"film_series"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"film_series,omitempty"`
   Other struct {
-    Value string `json:"value"`
-    Raw string `json:"raw"`
-    Start int `json:"start"`
-    End int `json:"end"`
-  } `json:"other"`
+    Value string `json:"value,omitempty"`
+    Raw string `json:"raw,omitempty"`
+    Start int `json:"start,omitempty"`
+    End int `json:"end,omitempty"`
+  } `json:"other,omitempty"`
 }
 
 // Returns the output of Guessit (advanced) as a struct
