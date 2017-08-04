@@ -78,7 +78,7 @@ type Properties struct {
 func Guessit(filename string) (*Properties, error) {
   var err error
 
-  if _, err = sysutils.SearchEnvPath("PATH", "guessit", ":"); err != nil {
+  if _, err = sysutils.SearchEnvPath("PATH", ":", "guessit"); err != nil {
     return nil, err
   }
 
