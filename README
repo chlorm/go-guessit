@@ -6,6 +6,8 @@ A wrapper around the guessit cli.
 ### Usage:
 
 ```go
+package main
+
 import (
   "errors"
   "fmt"
