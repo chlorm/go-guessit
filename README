@@ -23,6 +23,6 @@ func main() {
     errors.New("error message")
     os.Exit(1)
   }
-  fmt.Println(p.Type)
+  fmt.Println(p.Type.Value)
 }
 ```
