@@ -22,7 +22,7 @@ import (
   "encoding/json"
   "os/exec"
 
-  "github.com/chlorm/go-sys-utils/findbinpath"
+  "github.com/chlorm/go-sys-utils"
 )
 
 // http://guessit.readthedocs.io/en/latest/properties.html
@@ -285,8 +285,7 @@ type Properties struct {
 func Guessit(filename string) (*Properties, error) {
   var err error
 
-  _, err = findbinpath.FindBinPath("guessit")
-  if err != nil {
+  if _, err = sysutils.SearchEnvPath("PATH", "guessit", ":"); err != nil {
     return nil, err
   }
 
