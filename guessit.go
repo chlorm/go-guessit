@@ -281,7 +281,7 @@ type Properties struct {
   } `json:"other"`
 }
 
-// Call guessit CLI
+// Returns the output of Guessit (advanced) as a struct
 func Guessit(filename string) (*Properties, error) {
   var err error
 
