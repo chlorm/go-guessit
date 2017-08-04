@@ -296,8 +296,7 @@ func Guessit(filename string) (*Properties, error) {
 
   // Unmarshal JSON into struct
   var properties *Properties
-  err = json.Unmarshal(guessitOut, &properties)
-  if err != nil {
+  if err = json.Unmarshal(guessitOut, &properties); err != nil {
     return nil, err
   }
 
