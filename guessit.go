@@ -26,252 +26,252 @@ import (
 // http://guessit.readthedocs.io/en/latest/properties.html
 type Properties struct {
   // Main properties
-  Type struct {
+  Type []struct {
     Value string `json:"value"`
     Raw string `json:"raw"`
     Start int `json:"start"`
     End int `json:"end"`
   } `json:"type"`
-  Title struct {
+  Title []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"title,omitempty"`
-  AlternativeTitle struct {
+  AlternativeTitle []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"alternative_title,omitempty"`
-  Container struct {
+  Container []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"container,omitempty"`
-  MimeType struct {
+  MimeType []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"mimetype,omitempty"`
-  Date struct {
+  Date []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"date,omitempty"`
-  Year struct {
+  Year []struct {
     Value int `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"year,omitempty"`
-  ReleaseGroup struct {
+  ReleaseGroup []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"release_group,omitempty"`
-  Website struct {
+  Website []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"website,omitempty"`
-  StreamingService struct {
+  StreamingService []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"streaming_service,omitempty"`
   // Episode properties
-  Season struct {
+  Season []struct {
     Value int `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"season,omitempty"`
-  Episode struct {
+  Episode []struct {
     Value int `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"episode,omitempty"`
-  EpisodeCount struct {
+  EpisodeCount []struct {
     Value int `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"episode_count,omitempty"`
-  SeasonCount struct {
+  SeasonCount []struct {
     Value int `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"season_count,omitempty"`
-  EpisodeDetails struct {
+  EpisodeDetails []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"episode_details,omitempty"`
-  EpisodeFormat struct {
+  EpisodeFormat []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"episode_format,omitempty"`
-  Part struct {
+  Part []struct {
     Value int `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"part,omitempty"`
-  Version struct {
+  Version []struct {
     Value int `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"version,omitempty"`
   //Video properties
-  Format struct {
+  Format []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"format,omitempty"`
-  ScreenSize struct {
+  ScreenSize []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"screen_size,omitempty"`
-  VideoCodec struct {
+  VideoCodec []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"video_codec,omitempty"`
-  VideoProfile struct {
+  VideoProfile []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"video_profile,omitempty"`
-  VideoApi struct {
+  VideoApi []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"video_api,omitempty"`
   // Audio properties
-  AudioChannels struct {
+  AudioChannels []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"audio_channels,omitempty"`
-  AudioCodec struct {
+  AudioCodec []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"audio_codec,omitempty"`
-  AudioProfile struct {
+  AudioProfile []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"audio_profile,omitempty"`
   // Localization properties
-  Country struct {
+  Country []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"country,omitempty"`
-  Language struct {
+  Language []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"language,omitempty"`
-  SubtitleLanguage struct {
+  SubtitleLanguage []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"subtitle_language,omitempty"`
   // Other properties
-  Bonus struct {
+  Bonus []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"bonus,omitempty"`
-  BonusTitle struct {
+  BonusTitle []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"bonus_title,omitempty"`
-  Cd struct {
+  Cd []struct {
     Value int `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"cd,omitempty"`
-  CdCount struct {
+  CdCount []struct {
     Value int `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"cd_count,omitempty"`
-  Crc32 struct {
+  Crc32 []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"crc32,omitempty"`
-  Uuid struct {
+  Uuid []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"uuid,omitempty"`
-  Size struct {
+  Size []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"size,omitempty"`
-  Edition struct {
+  Edition []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"edition,omitempty"`
-  Film struct {
+  Film []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"film,omitempty"`
-  FilmTitle struct {
+  FilmTitle []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"film_title,omitempty"`
-  FilmSeries struct {
+  FilmSeries []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
     End int `json:"end,omitempty"`
   } `json:"film_series,omitempty"`
-  Other struct {
+  Other []struct {
     Value string `json:"value,omitempty"`
     Raw string `json:"raw,omitempty"`
     Start int `json:"start,omitempty"`
@@ -287,7 +287,7 @@ func Guessit(filename string) (*Properties, error) {
     return nil, err
   }
 
-  guessitOut, err := exec.Command("guessit", "-j", "-a", filename).Output()
+  guessitOut, err := exec.Command("guessit", "--json", "--advanced", "--enforce-list", filename).Output()
   if err != nil {
     return nil, err
   }
