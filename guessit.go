@@ -19,8 +19,6 @@ package guessit
 import (
 	"encoding/json"
 	"os/exec"
-
-	"github.com/chlorm/go-sys-utils"
 )
 
 // http://guessit.readthedocs.io/en/latest/properties.html
@@ -287,13 +285,12 @@ type Properties struct {
 
 // Returns the output of Guessit (advanced) as a struct
 func Guessit(filename string) (*Properties, error) {
-	var err error
-
-	if _, err = sysutils.SearchEnvPath("PATH", ":", "guessit"); err != nil {
+	guessit, err := exec.LookPath("guessit")
+	if err != nil {
 		return nil, err
 	}
 
-	guessitOut, err := exec.Command("guessit", "--json", "--advanced", "--enforce-list", filename).Output()
+	guessitOut, err := exec.Command(guessit, "--json", "--advanced", "--enforce-list", filename).Output()
 	if err != nil {
 		return nil, err
 	}
